@@ -8,15 +8,17 @@
 
 // 8 7,8 -7,1 9
 
-double[,] array = new double[5, 8];
+double[,] array = new double[3, 4];
 Random random = new Random();
 
-for (int i = 0; i < 5; i++)
+for (int i = 0; i < 3; i++)
 {
-    for (int j = 0; j < 8; j ++)
+    for (int j = 0; j < 4; j ++)
+
     {
         array[i, j] = (random.NextDouble() * -10 + random.NextDouble() * 10); 
         Console.Write("{0,9:F1}", array [i, j]);
     }
+    
     Console.WriteLine();
 }
